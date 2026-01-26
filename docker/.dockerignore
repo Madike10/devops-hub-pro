@@ -1,43 +1,68 @@
-#complete the .dockerignore file
-# Ignore node modules
+# Development dependencies (seront installées dans le conteneur)
 node_modules
-# Ignore log files
+
+# Log files
 *.log
-# Ignore environment files
-.env
-# Ignore Dockerfiles
-Dockerfile*
-# Ignore git files
-.git
-.gitignore
-# Ignore temporary files
-*.tmp
-*.swp
-# Ignore build directories
-dist
-build
-# Ignore coverage reports
-coverage
-# Ignore IDE specific files
-.vscode
-.idea
-# Ignore OS generated files 
-.DS_Store
-Thumbs.db
-# Ignore npm debug files
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log* 
-# Ignore test result files
+yarn-error.log*
+
+# Environment files (sensibles - ne JAMAIS inclure)
+.env
+.env.local
+.env.*.local
+
+# Git files
+.git
+.gitignore
+.github
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Coverage reports (tests)
+coverage
+.nyc_output
 test-results/
-# Ignore compiled files
-*.class
-*.obj
-*.exe
-# Ignore package lock files
-package-lock.json
-yarn.lock
-# Ignore cache directories
+
+# IDE specific files
+.vscode
+.idea
+*.sublime-*
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cache directories
 .cache
-# Ignore public assets
-public/assets/
+.npm
+.eslintcache
+.parcel-cache
+
+# Documentation et fichiers non nécessaires en production
+README.md
+CHANGELOG.md
+LICENSE
+docs/
+*.md
+
+# Fichiers Docker eux-mêmes
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Fichiers de CI/CD
+.gitlab-ci.yml
+.travis.yml
+Jenkinsfile
+
+# Fichiers de test
+__tests__
+*.test.js
+*.spec.js
+jest.config.js

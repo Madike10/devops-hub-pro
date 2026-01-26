@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Installer les dépendances (cache layer)
 COPY package*.json ./
-RUN npm ci --only=production && \
+RUN npm install --only=production && \
     npm cache clean --force
 
 # Copier le code source
