@@ -37,13 +37,13 @@ case $ENVIRONMENT in
         echo "📦 Démarrage en mode DÉVELOPPEMENT..."
         echo "   - Hot reload activé"
         echo "   - Logs verbose activés"
-        docker-compose -f "$SCRIPT_DIR/../docker-compose.yml" up --build
+        docker-compose -f "$SCRIPT_DIR/../docker/docker-compose.yml" up --build
         ;;
     prod)
         echo "📦 Démarrage en mode PRODUCTION..."
         echo "   - Optimisation maximale"
         echo "   - Restart policy: unless-stopped"
-        docker-compose -f "$SCRIPT_DIR/../docker-compose.yml" up -d
+        docker-compose -f "$SCRIPT_DIR/../docker/docker-compose.yml" up -d
         echo ""
         echo "✅ Services démarrés en arrière-plan!"
         echo "📊 Status: docker-compose ps"

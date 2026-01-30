@@ -31,10 +31,10 @@ coverage
 .env.local
 .env.*.local
 
-# Docker
-Dockerfile
-docker-compose*.yml
-.dockerignore
+# # Docker
+# Dockerfile
+# docker-compose*.yml
+# .dockerignore
 
 # CI/CD
 .github
