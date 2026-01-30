@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-hub
+  labels:
+    app: devops-hub
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-hub
+  template:
+    metadata:
+      labels:
+        app: devops-hub
+    spec:
+      containers:
+      - name: devops-hub
+        image: madike10/devops-hub:v2
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"

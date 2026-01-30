@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: devops-hub-config
+data: 
+  NODE_ENV: "production"
+  PORT: "3000" 
+
+  
