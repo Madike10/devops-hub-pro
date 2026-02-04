@@ -7,32 +7,32 @@ Mettre en place une infrastructure DevOps complète pour une application existan
 
 ## 🧱 Phase 1 — Containerisation (Docker)
 
-- [ ] Analyse du projet existant
-- [ ] Création du Dockerfile
-- [ ] Multi-stage build
-- [ ] Variables d’environnement
-- [ ] .dockerignore
-- [ ] Docker Compose pour dev
-- [ ] Healthcheck container
-- [ ] Versioning des images
-- [ ] Push images vers registry (DockerHub/GHCR)
+- [X] Analyse du projet existant
+- [X] Création du Dockerfile
+- [x] Multi-stage build
+- [x] Variables d’environnement
+- [x] .dockerignore
+- [x] Docker Compose pour dev
+- [x] Healthcheck container
+- [x] Versioning des images
+- [x] Push images vers registry (DockerHub/GHCR)
 
 ---
 
 ## ☸ Phase 2 — Orchestration (Kubernetes)
 
-- [ ] Création cluster local (Kind ou Minikube)
-- [ ] Namespace separation (dev/prod)
-- [ ] Deployment
-- [ ] Service (ClusterIP, NodePort)
-- [ ] Ingress Controller (NGINX)
-- [ ] ConfigMap
-- [ ] Secrets
-- [ ] HPA (Horizontal Pod Autoscaler)
-- [ ] Liveness & Readiness Probes
-- [ ] Resource limits (CPU/RAM)
+- [x] Création cluster local (Kind ou Minikube)
+- [x] Namespace separation (dev/prod)
+- [x] Deployment
+- [x] Service (ClusterIP, NodePort)
+- [x] Ingress Controller (NGINX)
+- [x] ConfigMap
+- [x] Secrets
+- [x] HPA (Horizontal Pod Autoscaler)
+- [x] Liveness & Readiness Probes
+- [x] Resource limits (CPU/RAM)
 - [ ] Helm Chart
-- [ ] Environment overlays (kustomize)
+- [x] Environment overlays (kustomize)
 
 ---
 
