@@ -1,0 +1,9 @@
+replicacount: 5
+labels:
+  environment: prod
+image:
+  repository: madike10/devops-hub
+  tag: v2
+  pullPolicy: IfNotPresent
+ingress:
+  host: devops-hub.prod.local  
